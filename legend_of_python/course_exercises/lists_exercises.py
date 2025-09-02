@@ -1,11 +1,11 @@
-# Write code below 💖
+# Lego 🎁
 
 lego_parts = [8980, 7323, 5343, 82700, 92232, 1203, 7319, 8903, 2328, 1279, 679, 589]
 
 print(min(lego_parts))
 print(max(lego_parts))
 
-# Write code below 💖
+# Reading List 📕📘
 
 reading_list = ["Harry Potter", "1984", "The Fault in Our Stars", "The Mom Test", "Life in Code"]
 
@@ -14,7 +14,7 @@ reading_list.remove("1984")
 reading_list.pop(1)
 print(reading_list)
 
-# Write code below 💖
+# Playlist 💽
 
 playlist = [
   'Porches - rangerover',
@@ -29,4 +29,5 @@ for i in playlist:
   print(i)
 
 for i in range(len(playlist)):
+
   print(playlist[i])
