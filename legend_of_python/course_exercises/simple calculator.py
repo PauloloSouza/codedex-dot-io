@@ -1,4 +1,4 @@
-# Write code below 💖
+# Simple Calculator 📲
 
 def add(a, b):
   total = a + b
@@ -24,4 +24,5 @@ print(add(2, 2))
 print(substract(20, 6))
 print(multiply(2, 3))
 print(divide(121, 11))
+
 print(exp(8, 5))
