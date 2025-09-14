@@ -31,11 +31,11 @@ def dummy_war_atk(): #Training attack power of Warrior
     print("You get your sword and perform hits with precision on your training dummy.")
     print("")
     if atk_power <= 3: #Increase the attack power
-        upgrade_atk = stats_player_monster.PW_attack * 0.5
+        upgrade_atk = stats_player_monster.PW_attack * 0.7
     elif atk_power >3 and atk_power <= 10:
-        upgrade_atk = stats_player_monster.PW_attack * 0.3
+        upgrade_atk = stats_player_monster.PW_attack * 0.5
     else:
-        upgrade_atk = stats_player_monster.PW_attack * 0.1
+        upgrade_atk = stats_player_monster.PW_attack * 0.3
 
     stats_player_monster.player_warrior[2] += upgrade_atk
     stats_player_monster.PW_attack += upgrade_atk
@@ -148,14 +148,14 @@ def dummy_mage_mag(): #Training magic power of Mage
     print("You read some spellbooks and meditade, getting focus and concentration to unlesh more spells.")
     print("")
     if mag_power <= 3:
+        upgrade_mag = stats_player_monster.PM_magic * 1.0
+    elif mag_power >3 and mag_power <= 10:
         upgrade_mag = stats_player_monster.PM_magic * 0.5
-    elif mag_power >3 and mag_power <= 7:
-        upgrade_mag = stats_player_monster.PM_magic * 0.3
     else:
         upgrade_mag = stats_player_monster.PM_magic * 0.1
     
-    stats_player_monster.player_mage[3] = upgrade_mag
-    stats_player_monster.PM_attack = upgrade_mag
+    stats_player_monster.player_mage[3] += upgrade_mag
+    stats_player_monster.PM_attack += upgrade_mag
 
     stats_player_monster.stats_mage = stats_player_monster.PM_CombatStats(
         stats_player_monster.PM_level,
@@ -180,7 +180,7 @@ def dummy_mage_def(): #Training defense power of Mage
     print("")
     if def_power <= 3:
         upgrade_def = stats_player_monster.PM_defense * 0.3
-    elif def_power >3 and def_power <= 7:
+    elif def_power >3 and def_power <= 10:
         upgrade_def = stats_player_monster.PM_defense * 0.2
     else:
         upgrade_def = stats_player_monster.PM_defense * 0.1
@@ -211,3 +211,4 @@ def training_loop(home_local3, player):
     elif home_local3 == 3 and player == 2:
 
         dummy_mage_def()
+
