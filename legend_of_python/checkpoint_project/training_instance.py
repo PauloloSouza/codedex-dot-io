@@ -47,7 +47,7 @@ def dummy_war_atk(): #Training attack power of Warrior
     )
 
     stats_player_monster.warrior = stats_player_monster.warrior_dmg(stats_player_monster.stats_warrior)
-    print(stats_player_monster.warrior[1])
+    #print(stats_player_monster.warrior[1])
     
     is_training = False #This makes stop training loop.
     first_training = False #This makes not training more than once.
@@ -78,7 +78,7 @@ def dummy_war_mag(): #Training magic power of Warrior
     )
 
     stats_player_monster.warrior = stats_player_monster.warrior_dmg(stats_player_monster.stats_warrior)
-    print(stats_player_monster.warrior[1])
+    #print(stats_player_monster.warrior[1])
 
     is_training = False
     first_training = False
@@ -102,7 +102,7 @@ def dummy_war_def(): #Training defense power of Warrior
     stats_player_monster.player_warrior[4] += upgrade_def
     stats_player_monster.PW_defense += upgrade_def
 
-    print(stats_player_monster.player_warrior[4])
+    #print(stats_player_monster.player_warrior[4])
 
     is_training = False
     first_training = False
@@ -133,7 +133,7 @@ def dummy_mage_atk(): #Training attack power of Mage
     )
 
     stats_player_monster.mage = stats_player_monster.mage_dmg(stats_player_monster.stats_mage)
-    print(stats_player_monster.mage[1])
+    #print(stats_player_monster.mage[1])
 
     is_training = False
     first_training = False
@@ -164,7 +164,7 @@ def dummy_mage_mag(): #Training magic power of Mage
     )
 
     stats_player_monster.mage = stats_player_monster.mage_dmg(stats_player_monster.stats_mage)
-    print(stats_player_monster.mage[1])
+    #print(stats_player_monster.mage[1])
 
     is_training = False
     first_training = False
@@ -188,7 +188,7 @@ def dummy_mage_def(): #Training defense power of Mage
     stats_player_monster.player_mage[4] += upgrade_def
     stats_player_monster.PM_defense += upgrade_def
 
-    print(stats_player_monster.player_mage[4])
+    #print(stats_player_monster.player_mage[4])
     
     is_training = False
     first_training = False
@@ -209,4 +209,5 @@ def training_loop(home_local3, player):
     elif home_local3 == 2 and player == 2:
         dummy_mage_mag()
     elif home_local3 == 3 and player == 2:
+
         dummy_mage_def()
