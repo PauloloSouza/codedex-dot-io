@@ -1,1 +1,1 @@
-This was a "checkpoint project" from codedex.io, was very challenging to me, i toked several weeks to finish, it's very good to pratice and find errors, solve the problems I faced. I'm very happy and glad to "finish" this.
+This was a "checkpoint project" from codedex.io, was very challenging to me, i toked several weeks to finish, was very good to pratice and find errors, solve the problems I faced. I'm very happy and glad to "finish" this.
